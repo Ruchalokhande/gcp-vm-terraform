@@ -1,4 +1,14 @@
-variable "credentials_file" {
+variable "project" {
+  description = "GCP project ID"
   type        = string
-  description = "Path to the GCP service account JSON key"
+}
+
+variable "region" {
+  description = "GCP region"
+  type        = string
+}
+
+variable "zone" {
+  description = "GCP zone"
+  type        = string
 }
