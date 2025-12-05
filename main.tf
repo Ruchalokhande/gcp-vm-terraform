@@ -1,5 +1,5 @@
 resource "google_compute_instance" "vm" {
-  name         = "jenkins-tf-VM"
+  name         = "jenkins-tf-vm"
   machine_type = "e2-small"
   zone         = var.zone
 
