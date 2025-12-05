@@ -1,3 +1,3 @@
-project = "qwiklabs-gcp-00-fe712e94e665"
+project = "qwiklabs-gcp-02-affcfdc1fa5c"
 region  = "us-central1"
 zone    = "us-central1-b"
