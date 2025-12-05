@@ -1,13 +1,4 @@
-variable "project" {
-  type = string
-}
-
-variable "region" {
-  type    = string
-  default = "asia-south1"
-}
-
-variable "zone" {
-  type    = string
-  default = "asia-south1-a"
+variable "credentials_file" {
+  type        = string
+  description = "Path to the GCP service account JSON key"
 }
