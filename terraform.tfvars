@@ -1,6 +1,3 @@
-provider "google" {
-  project = var.project
-  region  = var.region
-  zone    = var.zone
-  # credentials are read automatically from GOOGLE_APPLICATION_CREDENTIALS
-}
+project = "qwiklabs-gcp-03-645988c6412a"
+region  = "asia-south1"
+zone    = "asia-south1-a"
