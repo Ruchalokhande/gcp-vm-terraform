@@ -1,16 +1,19 @@
-resource "google_compute_instance" "vm" {
-  name         = "jenkins-tf-vm"
-  machine_type = "e2-small"
+resource "google_compute_instance" "vm_instance" {
+  name         = "jenkins-vm"
+  machine_type = "e2-micro"
   zone         = var.zone
 
   boot_disk {
     initialize_params {
-      image = "debian-cloud/debian-12"
+      image = "debian-cloud/debian-11"
     }
   }
 
   network_interface {
     network = "default"
-    access_config {}
+
+    access_config {
+      # Ephemeral public IP
+    }
   }
 }
